@@ -6,8 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sons of the Sahya</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+           theme: {
+                extend: {
+                    colors: {
+                        orange: '#f0811b',
+                        blue: '#1b3864',
+                        green: '#a2d3bf'
+                    },
+                    fontFamily: {
+                      laila: ['Laila', 'sans-serif']
+                     }
+                }
+           }
+       }
+    </script>
 </head>
-<body>
-    <p class="white">Sons of the Sahya</p>
+<body class="bg-green">
+  <div class="bg-orange flex flex-col text-center border-4 border-blue justify-center m-4 font-laila rounded-b-2xl">
+    <p class="text-blue p-4">Sons of the Sahya</p>
+    <div class="h-8">
+      <img class="hidden" src="elephant.svg"> 
+    </div>
+    <p class="text-orange bg-green p-1">सह्या के पुत्र</p>
+    <div class="h-8">
+
+    </div>
+  </div>
 </body>
 </html>
