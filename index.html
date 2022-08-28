@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sons of the Sahya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumar+One&display=swap" rel="stylesheet"> 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -16,22 +19,25 @@
                         green: '#a2d3bf'
                     },
                     fontFamily: {
-                      laila: ['Laila', 'sans-serif']
+                      laila: ['Laila', 'sans-serif'],
+                      kumar: ['Kumar One', 'cursive']
                      }
                 }
            }
        }
     </script>
 </head>
-<body class="bg-green">
-  <div class="bg-orange flex flex-col text-center border-4 border-blue justify-center m-4 font-laila rounded-b-2xl">
-    <p class="text-blue p-4">Sons of the Sahya</p>
+<body class="bg-blue">
+  <div class="bg-orange flex flex-col text-center border-8 border-green justify-center m-4 font-laila rounded-b-2xl">
+    <div class="h-4"></div>
+    <p class="text-blue text-5xl bg-green border-orange border-b-8 p-4 font-bold font-kumar">Sons <span class="text-base">of the</span> Sahya</p>
+    <a class="text-blue font-kumar p-2 text-lg border-b-8 border-t-8 border-green" href="https://www.theopenleague.com/">The Open League - USE2</a>
     <div class="h-8">
       <img class="hidden" src="elephant.svg"> 
     </div>
-    <p class="text-orange bg-green p-1">सह्या के पुत्र</p>
+    <img class="w-1/2 object-center" src="logo.png" alt="Logo of Sons of the Sahya">
+    <p class="text-orange bg-green p-1 font-bold text-2xl">सह्या के पुत्र</p>
     <div class="h-8">
-
     </div>
   </div>
 </body>
