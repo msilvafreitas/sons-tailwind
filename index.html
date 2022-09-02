@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumar+One&display=swap" rel="stylesheet"> 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./includes/script.js" defer></script>
     <script>
       tailwind.config = {
            theme: {
@@ -28,32 +29,36 @@
     </script>
 </head>
 <body class="bg-blue flex justify-center">
-  <div class="bg-orange flex flex-col text-center border-8 border-green justify-center m-4 font-laila rounded-b-3xl">
-    <div>
-      <nav>
-        <ul class="flex justify-evenly text-green">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Players</a></li>
-          <li><a href="#">Seasons</a></li>
-          <li><a href="#">Statistics</a></li>
-        </ul>
-      </nav>
+  <div>
+    <div class="bg-orange flex flex-col text-center border-8 border-green justify-center m-4 font-laila rounded-b-3xl">
+      <div>
+        <nav>
+          <ul class="flex justify-evenly text-green">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Players</a></li>
+            <li><a href="#">Seasons</a></li>
+            <li><a href="#">Statistics</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="text-orange absolute top-16 hidden font-bold text-l">सह्या के पुत्र</p>
+      <p class="text-blue text-5xl bg-green border-orange border-b-8 p-4 font-bold font-kumar">Sons <span class="text-base"> of the</span> Sahya</p>
+      <a class="text-blue font-laila p-2 text-lg border-b-8 border-t-8 border-green" href="https://www.theopenleague.com/">The Open League - USE2</a>
+      <div class="h-8">
+        <img class="hidden" src="elephant.svg"> 
+      </div>
+      <div class="flex justify-center">
+        <img class="w-1/2 object-center" src="logo.png" alt="Logo of Sons of the Sahya">
+      </div>
+      <div class="h-8">
+      </div>
     </div>
-    <p class="text-orange absolute top-16 left-96 font-bold text-l">सह्या के पुत्र</p>
-    <p class="text-blue text-5xl bg-green border-orange border-b-8 p-4 font-bold font-kumar"><span class="text-green">T</span>Sons <span class="text-base"> of the</span> Sahya</p>
-    <a class="text-blue font-laila p-2 text-lg border-b-8 border-t-8 border-green" href="https://www.theopenleague.com/">The Open League - USE2</a>
-    <div class="h-8">
-      <img class="hidden" src="elephant.svg"> 
-    </div>
-    <div class="flex justify-center">
-      <img class="w-1/2 object-center" src="logo.png" alt="Logo of Sons of the Sahya">
-    </div>
-    <div>
-      <h1>Players</h1>
-    </div>
-    <div class="h-8">
+    <div class="text-center text-blue bg-orange border-green border-8 border-b-8 border-t-8">
+      <h1 class="font-bold">Players</h1>
+      <div id="players" >
+        
+      </div>
     </div>
   </div>
-  <script src="script.js"></script>
 </body>
 </html>
