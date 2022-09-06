@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumar+One&display=swap" rel="stylesheet"> 
+    <style>
+      .checkbox:checked + .players { 
+        display: none;
+      }
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./includes/script.js" defer></script>
     <script>
@@ -27,6 +32,7 @@
            }
        }
     </script>
+    
 </head>
 <body class="bg-blue flex justify-center container mx-auto">
   <div>
@@ -53,7 +59,7 @@
       </div>
       <div class="text-blue bg-green border-8 border-orange flex justify-center align-middle">
         <img class="object-contain" src="elephant.svg"> 
-        <div class="flex-col font-bold">
+        <div class="flex-col font-bold self-center">
           <h1 class="font-kumar p-4">Titles</h1>
           <p><span class="text-xl">🏆🏆</span>  League 1</p>
           <p><span class="text-xl">🏆🏆</span> Cup 1</p>
@@ -67,11 +73,15 @@
       <p class="p-4">In Kerala culture, elephants are known as “the Sons of the Sahya,” as they are found in the Sahyadri mountain range. The term used to have a negative association with captive elephants, but the club has used their platform to actively promote the end of that activity and champion the wild herds of Kerala. This is the newest team in the league, it was founded by siblings from Kerala who went to university abroad and while there, raised a fund that allowed them to buy an expansion team and bring their love for soccer to the state. With the name and imagery, merchandise sales have been off the charts. Right now, fandom is at a fever pitch, everyone has the fervor of a convert – but the question is will it all sink without success on the field?</p>
     </div>
     <!-- Players -->
-    <div id="players" class="max-w-2xl text-center text-blue bg-orange border-orange ring-8 ring-green border-8 m-8 rounded-b-3xl container mx-auto">
-      <h1 class="font-bold font-kumar text-2xl p-4 bg-green border-8 border-orange">Players</h1>
-      <div id="players" >
-        
-      </div>
+    
+    <div class="max-w-2xl text-center text-blue bg-orange border-orange ring-8 ring-green border-8 m-8 rounded-b-3xl container mx-auto">
+      <input type="checkbox" id="playerslist">
+      <label for="playerslist">
+        <h1 class="font-bold font-kumar text-2xl p-4 bg-green border-8 border-orange">Players</h1>
+        <div id="players" class="players">
+          
+        </div>
+      </label>
     </div>
     <!-- Kits -->
     <div class="max-w-2xl text-center text-blue  bg-orange border-orange ring-8 ring-green border-8 m-8 rounded-b-3xl container mx-auto">
