@@ -9,12 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumar+One&display=swap" rel="stylesheet"> 
     <style>
-      .checkbox:checked + .players { 
+      #menu-toggle:checked + .menu-button-container { 
         display: none;
       }
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./includes/script.js" defer></script>
     <script>
       tailwind.config = {
            theme: {
@@ -43,7 +42,7 @@
           <ul class="flex justify-evenly text-green">
             <li><a href="#">Home</a></li>
             <li><a href="#players">Players</a></li>
-            <li><a href="#">Seasons</a></li>
+            <li><a href="#seasons">Seasons</a></li>
             <li><a href="#">Statistics</a></li>
           </ul>
         </nav>
@@ -70,18 +69,19 @@
     <!-- About -->
     <div class="max-w-2xl text-center text-blue bg-orange border-orange ring-8 ring-green border-8 m-8 rounded-b-3xl container mx-auto">
       <h1 class="font-bold font-kumar text-2xl p-4 bg-green border-8 border-orange">About</h1>
-      <p class="p-4">In Kerala culture, elephants are known as “the Sons of the Sahya,” as they are found in the Sahyadri mountain range. The term used to have a negative association with captive elephants, but the club has used their platform to actively promote the end of that activity and champion the wild herds of Kerala. This is the newest team in the league, it was founded by siblings from Kerala who went to university abroad and while there, raised a fund that allowed them to buy an expansion team and bring their love for soccer to the state. With the name and imagery, merchandise sales have been off the charts. Right now, fandom is at a fever pitch, everyone has the fervor of a convert – but the question is will it all sink without success on the field?</p>
+      <p class="p-4 text-justify italic"> "In Kerala culture, elephants are known as “the Sons of the Sahya,” as they are found in the Sahyadri mountain range. The term used to have a negative association with captive elephants, but the club has used their platform to actively promote the end of that activity and champion the wild herds of Kerala. This is the newest team in the league, it was founded by siblings from Kerala who went to university abroad and while there, raised a fund that allowed them to buy an expansion team and bring their love for soccer to the state. With the name and imagery, merchandise sales have been off the charts. Right now, fandom is at a fever pitch, everyone has the fervor of a convert – but the question is will it all sink without success on the field?"</p>
+      <p class="text-right p-4 font-bold">The Open League</p>
     </div>
     <!-- Players -->
     
     <div class="max-w-2xl text-center text-blue bg-orange border-orange ring-8 ring-green border-8 m-8 rounded-b-3xl container mx-auto">
-      <input type="checkbox" id="playerslist">
-      <label for="playerslist">
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class='menu'>
         <h1 class="font-bold font-kumar text-2xl p-4 bg-green border-8 border-orange">Players</h1>
-        <div id="players" class="players">
+      </label>
+        <div id="players" class='menu-button-container'>
           
         </div>
-      </label>
     </div>
     <!-- Kits -->
     <div class="max-w-2xl text-center text-blue  bg-orange border-orange ring-8 ring-green border-8 m-8 rounded-b-3xl container mx-auto">
@@ -94,9 +94,11 @@
       </div>
     </div>
     <!-- Seasons -->
-    <div class="max-w-2xl text-center text-blue  bg-orange border-orange ring-8 ring-green border-8 m-8 rounded-b-3xl container mx-auto">
+    <div id="seasons" class="max-w-2xl text-center text-blue  bg-orange border-orange ring-8 ring-green border-8 m-8 rounded-b-3xl container mx-auto">
       <h1 class="font-bold font-kumar text-2xl p-4 bg-green border-8 border-orange">Seasons</h1>
     </div>
   </div>
+  <script src="./includes/players.js" defer></script>
+  <script src="./includes/show.js"></script>
 </body>
 </html>
