@@ -75,18 +75,14 @@
     <!-- Players -->
     
     <div class="max-w-2xl text-center text-blue bg-orange border-orange ring-8 ring-green border-8 m-8 rounded-b-3xl container mx-auto">
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class='menu'>
-        <button class="font-bold font-kumar text-2xl p-4 bg-green border-8 border-orange">Players</button>
-      </label>
-        <div id="players" class='menu-button-container'>
-          
+        <button onclick="showContent('players')" class="font-bold font-kumar text-2xl p-4 bg-green border-8 border-orange w-full">Players</button>
+        <div id="players" class='menu-button-container hidden'>
         </div>
     </div>
     <!-- Kits -->
     <div class="max-w-2xl text-center text-blue  bg-orange border-orange ring-8 ring-green border-8 m-8 rounded-b-3xl container mx-auto">
-      <h1 class="font-bold font-kumar text-2xl p-4 bg-green border-8 border-orange">Kit History</h1>
-      <div class="flex justify-center flex-col">
+      <button onclick="showContent('kits')" class="font-bold font-kumar text-2xl p-4 bg-green border-8 border-orange w-full">Kit History</button>
+      <div id="kits" class="flex justify-center flex-col items-center hidden">
         <img class="max-w-xs object-contain min-w-0" src="img/base.png" alt="">
         <img class="max-w-xs object-contain min-w-0" src="img/kit1.png" alt="">
         <img class="max-w-xs object-contain min-w-0"  src="img/kit2.png" alt="">
